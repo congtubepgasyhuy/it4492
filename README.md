@@ -1,14 +1,13 @@
 # it4492_20191
-##Deloyment:
-	run:
-		```
-		git clone https://github.com/Pokemon97/it4492_20191.git
-		cd it4492_20191
-		composer update
-		php artisan migrate
-		php artisan db:seed --class=ProductTableSeeder
-		```
-##api:
+## Deloyment:
+```bash
+git clone https://github.com/Pokemon97/it4492.git
+cd it4492
+composer update
+php artisan migrate
+php artisan db:seed --class=ProductTableSeeder
+```
+## api:
 	- POST	/api/db/products/products
 	- GET	/api/db/products/productDetail/{id}
 	- GET	/api/db/products/categories
