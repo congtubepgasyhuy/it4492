@@ -1,0 +1,59 @@
+.header{
+	font-size: 14px; 
+	text-align: center; 
+	font-weight: bold;
+}
+.sub-header{
+	text-align: center; 
+	font-size: 14px;
+	margin-top: -10px
+}
+.title{
+	border-top: 2px double #000000; 
+	border-bottom: 1px solid #000000; 
+	border-left: 1px solid #000000; 
+	border-right: 1px solid #000000
+}
+.title-border{
+	border-top: 2px double #000000; 
+	border-bottom: 1px solid #000000; 
+}
+.sub-title{
+	border-top: 1px solid #000000; 
+	border-bottom: 1px solid #000000; 
+	border-left: 1px solid #000000; 
+	border-right: 1px solid #000000
+}
+.sub-title-right{
+	border-top: 1px solid #000000; 
+	border-bottom: 1px solid #000000; 
+	border-left: 1px solid #000000; 
+	border-right: 2px solid #000000
+}
+.sub-title-bot{
+	border-top: 1px solid #000000; 
+	border-bottom: 2px solid #000000; 
+	border-left: 1px solid #000000; 
+	border-right: 1px solid #000000
+}
+.sub-title-bot-right{
+	border-top: 1px solid #000000; 
+	border-bottom: 2px solid #000000; 
+	border-left: 1px solid #000000; 
+	border-right: 2px solid #000000
+}
+.sub-title-bot-left{
+	border-top: 1px solid #000000; 
+	border-bottom: 2px solid #000000; 
+	border-left: 2px solid #000000; 
+	border-right: 1px solid #000000
+}
+.body{
+	border-top: 1px solid #000000; 
+	border-bottom: 1px solid #000000; 
+	border-left: 2px double #000000; 
+	border-right: 1px solid #000000
+}
+body {
+	font-family: sans-serif;
+}

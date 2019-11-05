@@ -1,0 +1,185 @@
+.title-modal {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.box-action {
+    text-align: right;
+    margin-bottom: 30px;
+}
+.name-folder {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+.name-folder:focus {
+    box-shadow: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.box-btn {
+    text-align: right;
+    margin-right: 15px;
+}
+.flash-container {
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    height: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.flash-container.showing {
+    height: 50px;
+}
+
+.flash-container .message {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 0 0 4px 4px;
+}
+
+.flash-container .success {
+    background-color: #58b858;
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.flash-container .fail {
+    background-color: #ff0000;
+    opacity: 0.8;
+    color: #ffffff;
+}
+.my_sortable>li{
+    list-style:none
+}
+.my_sortable>li.placeholder{
+    position:relative
+}
+.my_sortable>li.placeholder:before{
+    position:absolute;
+    content:"";
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-left-color:red;
+    left:-6px;
+    top:-6px;
+    margin-bottom:-5px;
+    border-right:none
+}
+.content_list .content_item {
+    margin: 3px 0;
+}
+.a_part_view {
+    background: #e8e8e8;
+    color: black;
+    font-weight: 500;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+}
+.row-data-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+}
+.pull-right {
+    float: right !important;
+}
+.icon_buton {
+    cursor: pointer;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(top,#f1f1f1,#fff);
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 2px;
+    min-width: 34px;
+    color: #060606;
+    display: inline-block;
+    text-align: center;
+    padding-top: 3px;
+}
+.parent-1 {
+    margin: 3px 0 3px 30px !important;
+}
+.parent-1 .a_part_view {
+    background: #f7f7f7 !important;
+}
+.event-cover {
+    overflow: hidden;
+    flex: 50%;
+}
+.event-cover .cover {
+    width: 224px;
+    height: 145px;
+    transition: all .2s ease-in-out;
+}
+.event-content {
+    flex: 45%;
+    padding: 0 0px 0 20px;
+}
+.image-product {
+    width: 90px;
+}
+.img-product {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+.delete-confirm {
+    margin: 20px;
+    font-size: 1.2em;
+}
+.box-close {
+    border-bottom: 2px solid;
+}
+.filter {
+    width: 150px;
+}
+.box-product {
+    padding: 10px 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+.product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0742ac;
+}
+.trending {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.trending span {
+    font-size: 0.7em;
+}
+.add-top {
+    margin-left: 20px;
+}
+.add-top, .edit-top {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn-default {
+    margin-top: 5px;
+}
+.btn-danger {
+    margin-left: 5px;
+}

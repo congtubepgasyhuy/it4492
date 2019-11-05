@@ -1,0 +1,1 @@
+export const format_time = (t: Date) => `${t.getHours()}:${t.getMinutes()} ${t.getDate()}/${t.getMonth() + 1}`

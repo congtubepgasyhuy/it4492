@@ -1,0 +1,52 @@
+version: "3"
+
+services:
+  php-apache:
+    build:
+      context: ./build
+      args:
+        DOCUMENT_ROOT: /var/www/public
+    restart: always
+    volumes: 
+      - .:/var/www
+      - .build/php.ini:/usr/local/etc/php/conf.d/php.ini
+    ports:
+      - 80:80
+    links: 
+      - mariadb
+    environment: 
+      APP_NAME: "Quản lí bán sơn"
+      APP_ENV: local
+      APP_KEY: base64:xwuo1f8alIO5BHECDaSYJkUCNZ+prHHniM/74yiInt8=
+      APP_DEBUG: "TRUE"
+      APP_URL: http://localhost
+      DB_CONNECTION: mysql
+      DB_HOST: localhost
+      DB_PORT: 3306
+      DB_DATABASE: ban-son
+      DB_USERNAME: root
+      DB_PASSWORD: yx7n8gehy25rzeqjbyxxzs2
+      
+
+  mariadb:
+    image: mariadb
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: yx7n8gehy25rzeqjbyxxzs2
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links: 
+        - mariadb
+    ports:
+        - 8080:80
+    environment:
+      PMA_HOST: mariadb
+      MYSQL_ROOT_PASSWORD: yx7n8gehy25rzeqjbyxxzs2
+      
+  composer:
+    restart: 'no'
+    image: composer
+    command: install
+    volumes:
+      - .:/app
